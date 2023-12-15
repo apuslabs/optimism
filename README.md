@@ -2,11 +2,6 @@
   <br />
   <br />
   <a href="https://optimism.io"><img alt="Optimism" src="https://raw.githubusercontent.com/layr-labs/optimism/develop/v2.png" width=600></a>
-  <br />
-  <h3><a href="https://optimism.io">Optimism</a> is Ethereum, scaled.</h3>
-  <br />
-  <h3><a href="https://app.gitbook.com/o/bJhVFeKDe5jNBwSZCd4B/s/Py2Kmkwju3mPSo9jrKKt/eigenda-guides/eigenda-overview">EigenDA</a> is Ethereum DA, scaled.</h3>
-  <br />
 </div>
 
 ## EigenDA Support
