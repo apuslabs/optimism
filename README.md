@@ -1,7 +1,7 @@
 <div align="center">
   <br />
   <br />
-  <a href="https://optimism.io"><img alt="Optimism" src="https://raw.githubusercontent.com/layr-labs/![EigenDA + Optimism](v2-1.png)" width=600></a>
+  <a href="https://optimism.io"><img alt="Optimism" src="https://raw.githubusercontent.com/layr-labs/optimism/develop/v2.png" width=600></a>
   <br />
   <h3><a href="https://optimism.io">Optimism</a> is Ethereum, scaled.</h3>
   <br />
@@ -11,7 +11,7 @@
 
 ## EigenDA Support
 
-This is a fork of Optimism maintained by Eigen Labs which posts transaction data to EigenDA instead of Ethereum. In the place of transaction batches, this fork posts EigenDA blob keys to the rollup's inbox address on Ethereum, which can later be used to retrieve their corresponding blobs from the EigenDA operator set.
+This is a fork of Optimism maintained by Eigen Labs which posts transaction data to EigenDA instead of Ethereum. In the place of transaction batches, this posts EigenDA blob keys to the rollup's inbox address on Ethereum, which can later be used to retrieve their corresponding blobs from the EigenDA operator set.
 
 For more documentation [check out the full docs](https://app.gitbook.com/o/bJhVFeKDe5jNBwSZCd4B/s/Py2Kmkwju3mPSo9jrKKt/eigenda-guides/eigenda-rollup-user-guides/op-stack-+-eigenda-user-guide).
 
