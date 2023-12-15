@@ -1,11 +1,26 @@
 <div align="center">
   <br />
   <br />
-  <a href="https://optimism.io"><img alt="Optimism" src="https://raw.githubusercontent.com/ethereum-optimism/brand-kit/main/assets/svg/OPTIMISM-R.svg" width=600></a>
+  <a href="https://optimism.io"><img alt="Optimism" src="https://raw.githubusercontent.com/layr-labs/![EigenDA + Optimism](v2-1.png)" width=600></a>
   <br />
   <h3><a href="https://optimism.io">Optimism</a> is Ethereum, scaled.</h3>
   <br />
+  <h3><a href="https://app.gitbook.com/o/bJhVFeKDe5jNBwSZCd4B/s/Py2Kmkwju3mPSo9jrKKt/eigenda-guides/eigenda-overview">EigenDA</a> is Ethereum DA, scaled.</h3>
+  <br />
 </div>
+
+## EigenDA Support
+
+This is a fork of Optimism maintained by Eigen Labs which posts transaction data to EigenDA instead of Ethereum. In the place of transaction batches, this fork posts EigenDA blob keys to the rollup's inbox address on Ethereum, which can later be used to retrieve their corresponding blobs from the EigenDA operator set.
+
+For more documentation [check out the full docs](https://app.gitbook.com/o/bJhVFeKDe5jNBwSZCd4B/s/Py2Kmkwju3mPSo9jrKKt/eigenda-guides/eigenda-rollup-user-guides/op-stack-+-eigenda-user-guide).
+
+[https://altlayer.io/](AltLayer) is hosting a live goerli rollup demonstrating this integration:
+
+* Explorer: <https://op-eigenda-explorer.altlayer.io>
+* Rpc: <https://op-eigenda.altlayer.io>
+* Bridge: <https://opbridge-eigenda.altlayer.io/deposit?id=20231215>
+* Info Page: <https://rollup-info.altlayer.io/public/op_eigenda_testnet>
 
 ## What is Optimism?
 
@@ -15,9 +30,9 @@ In this repository, you'll find numerous core components of the OP Stack, the de
 
 ## Documentation
 
-- If you want to build on top of OP Mainnet, refer to the [Optimism Community Hub](https://community.optimism.io)
-- If you want to build your own OP Stack based blockchain, refer to the [OP Stack docs](https://stack.optimism.io)
-- If you want to contribute to the OP Stack, check out the [Protocol Specs](./specs)
+* If you want to build on top of OP Mainnet, refer to the [Optimism Community Hub](https://community.optimism.io)
+* If you want to build your own OP Stack based blockchain, refer to the [OP Stack docs](https://stack.optimism.io)
+* If you want to contribute to the OP Stack, check out the [Protocol Specs](./specs)
 
 ## Community
 
