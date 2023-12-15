@@ -153,3 +153,10 @@ It's strongly recommended to avoid merging PRs into develop during an active rel
 ## License
 
 All other files within this repository are licensed under the [MIT License](https://github.com/ethereum-optimism/optimism/blob/master/LICENSE) unless stated otherwise.
+
+## Attributions
+
+We based this code off of the [Celestia integration](https://github.com/celestiaorg/optimism) of the same nature, and
+in an earlier version, we rebased their commits for the sake of a clean diff.
+
+You can find their changes to OP Stack here: <https://github.com/celestiaorg/optimism/compare/d83d85157951d2a424bbd99246ecd13ecbf7ee69...celestia-develop>

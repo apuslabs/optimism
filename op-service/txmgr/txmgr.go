@@ -189,10 +189,10 @@ func (m *SimpleTxManager) send(ctx context.Context, candidate TxCandidate) (*typ
 		defer cancel()
 	}
 
-	// TODO: this is a hack to route only batcher transactions through celestia
+	// TODO: this is a hack to route only batcher transactions through ~~celestia~~ EigenDA
 	// SimpleTxManager is used by both batcher and proposer but since proposer
 	// writes to a smart contract, we overwrite _only_ batcher candidate as the
-	// frame pointer to celestia, while retaining the proposer pathway that
+	// frame pointer to ~~celestia~~ EigenDA, while retaining the proposer pathway that
 	// writes the state commitment data to ethereum.
 	// if candidate.To.Hex() == "0xfF00000000000000000000000000000000000000" {
 	if candidate.To.Hex() == "0xFf00000000000000000000000000000000000901" {
