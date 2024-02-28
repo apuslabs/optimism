@@ -2,6 +2,7 @@ package eigenda
 
 import (
 	"context"
+	"crypto/tls"
 	"encoding/base64"
 	"encoding/hex"
 	"fmt"
@@ -10,7 +11,7 @@ import (
 	"github.com/Layr-Labs/eigenda/api/grpc/disperser"
 	"github.com/ethereum/go-ethereum/log"
 	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials/insecure"
+	"google.golang.org/grpc/credentials"
 )
 
 type IEigenDA interface {
@@ -25,7 +26,7 @@ type EigenDA struct {
 }
 
 func (m *EigenDA) RetrieveBlob(ctx context.Context, BatchHeaderHash []byte, BlobIndex uint32) ([]byte, error) {
-	conn, err := grpc.Dial(m.RPC, grpc.WithTransportCredentials(insecure.NewCredentials()))
+	conn, err := grpc.Dial(m.RPC, grpc.WithTransportCredentials(credentials.NewTLS(&tls.Config{InsecureSkipVerify: true})))
 	if err != nil {
 		return nil, err
 	}
@@ -43,7 +44,7 @@ func (m *EigenDA) RetrieveBlob(ctx context.Context, BatchHeaderHash []byte, Blob
 
 func (m *EigenDA) DisperseBlob(ctx context.Context, txData []byte) (*disperser.BlobInfo, error) {
 	m.Log.Info("Attempting to disperse blob to EigenDA")
-	conn, err := grpc.Dial(m.RPC, grpc.WithTransportCredentials(insecure.NewCredentials()))
+	conn, err := grpc.Dial(m.RPC, grpc.WithTransportCredentials(credentials.NewTLS(&tls.Config{InsecureSkipVerify: true})))
 	if err != nil {
 		return nil, err
 	}
